@@ -2,19 +2,19 @@
   <Row type="flex" :gutter="18">
     <Col :span=19>
     <Panel shadow>
-      <div slot="title">{{$t('m.Problem_List')}}</div>
+      <div slot="title">{{$t('문제_목록')}}</div>
       <div slot="extra">
         <ul class="filter">
           <li>
             <Dropdown @on-click="filterByDifficulty">
-              <span>{{query.difficulty === '' ? this.$i18n.t('m.Difficulty') : this.$i18n.t('m.' + query.difficulty)}}
+              <span>{{query.difficulty === '' ? this.$i18n.t('난이도') : this.$i18n.t('m.' + query.difficulty)}}
                 <Icon type="arrow-down-b"></Icon>
               </span>
               <Dropdown-menu slot="list">
-                <Dropdown-item name="">{{$t('m.All')}}</Dropdown-item>
-                <Dropdown-item name="Low">{{$t('m.Low')}}</Dropdown-item>
-                <Dropdown-item name="Mid" >{{$t('m.Mid')}}</Dropdown-item>
-                <Dropdown-item name="High">{{$t('m.High')}}</Dropdown-item>
+                <Dropdown-item name="">{{$t('전체')}}</Dropdown-item>
+                <Dropdown-item name="Low">{{$t('쉬움')}}</Dropdown-item>
+                <Dropdown-item name="Mid" >{{$t('중간')}}</Dropdown-item>
+                <Dropdown-item name="High">{{$t('높음')}}</Dropdown-item>
               </Dropdown-menu>
             </Dropdown>
           </li>
