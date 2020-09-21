@@ -4,36 +4,36 @@
       <div class="logo"><span>{{website.website_name}}</span></div>
       <Menu-item name="/">
         <Icon type="home"></Icon>
-        {{$t('m.Home')}}
+        {{$t('홈으로')}}
       </Menu-item>
       <Menu-item name="/problem">
         <Icon type="ios-keypad"></Icon>
-        {{$t('m.NavProblems')}}
+        {{$t('문제')}}
       </Menu-item>
       <Menu-item name="/contest">
         <Icon type="trophy"></Icon>
-        {{$t('m.Contests')}}
+        {{$t('대회')}}
       </Menu-item>
       <Menu-item name="/status">
         <Icon type="ios-pulse-strong"></Icon>
-        {{$t('m.NavStatus')}}
+        {{$t('상태')}}
       </Menu-item>
       <Submenu name="rank">
         <template slot="title">
           <Icon type="podium"></Icon>
-          {{$t('m.Rank')}}
+          {{$t('순위')}}
         </template>
         <Menu-item name="/acm-rank">
-          {{$t('m.ACM_Rank')}}
+          {{$t('ACM_순위')}}
         </Menu-item>
         <Menu-item name="/oi-rank">
-          {{$t('m.OI_Rank')}}
+          {{$t('OI_순위')}}
         </Menu-item>
       </Submenu>
       <Submenu name="about">
         <template slot="title">
           <Icon type="information-circled"></Icon>
-          {{$t('m.About')}}
+          {{$t('도움말')}}
         </template>
         <Menu-item name="/about">
           {{$t('m.Judger')}}
@@ -47,13 +47,13 @@
           <Button type="ghost"
                   ref="loginBtn"
                   shape="circle"
-                  @click="handleBtnClick('login')">{{$t('m.Login')}}
+                  @click="handleBtnClick('login')">{{$t('로그인')}}
           </Button>
           <Button v-if="website.allow_register"
                   type="ghost"
                   shape="circle"
                   @click="handleBtnClick('register')"
-                  style="margin-left: 5px;">{{$t('m.Register')}}
+                  style="margin-left: 5px;">{{$t('계정생성')}}
           </Button>
         </div>
       </template>

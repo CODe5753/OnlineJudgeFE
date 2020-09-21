@@ -2,12 +2,12 @@
   <Row type="flex">
     <Col :span="24">
     <Panel id="contest-card" shadow>
-      <div slot="title">{{query.rule_type === '' ? this.$i18n.t('m.All') : query.rule_type}} {{$t('m.Contests')}}</div>
+      <div slot="title">{{query.rule_type === '' ? this.$i18n.t('전체') : query.rule_type}} {{$t('대회')}}</div>
       <div slot="extra">
         <ul class="filter">
           <li>
             <Dropdown @on-click="onRuleChange">
-              <span>{{query.rule_type === '' ? this.$i18n.t('m.Rule') : this.$i18n.t('m.' + query.rule_type)}}
+              <span>{{query.rule_type === '' ? this.$i18n.t('규칙') : this.$i18n.t('m.' + query.rule_type)}}
                 <Icon type="arrow-down-b"></Icon>
               </span>
               <Dropdown-menu slot="list">
@@ -19,7 +19,7 @@
           </li>
           <li>
             <Dropdown @on-click="onStatusChange">
-              <span>{{query.status === '' ? this.$i18n.t('m.Status') : this.$i18n.t('m.' + CONTEST_STATUS_REVERSE[query.status].name.replace(/ /g,"_"))}}
+              <span>{{query.status === '' ? this.$i18n.t('상태') : this.$i18n.t('m.' + CONTEST_STATUS_REVERSE[query.status].name.replace(/ /g,"_"))}}
                 <Icon type="arrow-down-b"></Icon>
               </span>
               <Dropdown-menu slot="list">
@@ -36,7 +36,7 @@
           </li>
         </ul>
       </div>
-      <p id="no-contest" v-if="contests.length == 0">{{$t('m.No_contest')}}</p>
+      <p id="no-contest" v-if="contests.length == 0">{{$t('대회가 없습니다')}}</p>
       <ol id="contest-list">
         <li v-for="contest in contests" :key="contest.title">
           <Row type="flex" justify="space-between" align="middle">
@@ -158,7 +158,7 @@
       goContest (contest) {
         this.cur_contest_id = contest.id
         if (contest.contest_type !== CONTEST_TYPE.PUBLIC && !this.isAuthenticated) {
-          this.$error(this.$i18n.t('m.Please_login_first'))
+          this.$error(this.$i18n.t('로그인이 필요합니다.'))
           this.$store.dispatch('changeModalStatus', {visible: true})
         } else {
           this.$router.push({name: 'contest-details', params: {contestID: contest.id}})
