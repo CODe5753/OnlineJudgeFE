@@ -4,13 +4,13 @@
       {{title}}
     </div>
     <div slot="extra">
-      <Button v-if="listVisible" type="info" @click="init" :loading="btnLoading">{{$t('m.Refresh')}}</Button>
-      <Button v-else type="ghost" icon="ios-undo" @click="goBack">{{$t('m.Back')}}</Button>
+      <Button v-if="listVisible" type="info" @click="init" :loading="btnLoading">{{$t('새로고침')}}</Button>
+      <Button v-else type="ghost" icon="ios-undo" @click="goBack">{{$t('뒤로')}}</Button>
     </div>
 
     <transition-group name="announcement-animate" mode="in-out">
       <div class="no-announcement" v-if="!announcements.length" key="no-announcement">
-        <p>{{$t('m.No_Announcements')}}</p>
+        <p>{{$t('공지사항이 없습니다')}}</p>
       </div>
       <template v-if="listVisible">
         <ul class="announcements-container" key="list">
@@ -99,7 +99,7 @@
     computed: {
       title () {
         if (this.listVisible) {
-          return this.isContest ? this.$i18n.t('m.Contest_Announcements') : this.$i18n.t('m.Announcements')
+          return this.isContest ? this.$i18n.t('대회공지사항') : this.$i18n.t('공지사항')
         } else {
           return this.announcement.title
         }
