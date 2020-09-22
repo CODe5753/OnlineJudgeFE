@@ -2,7 +2,7 @@
   <Row type="flex" :gutter="18">
     <Col :span=19>
     <Panel shadow>
-      <div slot="title">{{$t('문제_목록')}}</div>
+      <div slot="title">{{$t('문제 목록')}}</div>
       <div slot="extra">
         <ul class="filter">
           <li>
@@ -110,7 +110,7 @@
             }
           },
           {
-            title: this.$i18n.t('m.Title'),
+            title: this.$i18n.t('제목'),
             width: 400,
             render: (h, params) => {
               return h('Button', {
@@ -133,7 +133,7 @@
             }
           },
           {
-            title: this.$i18n.t('m.Level'),
+            title: this.$i18n.t('레벨'),
             render: (h, params) => {
               let t = params.row.difficulty
               let color = 'blue'
