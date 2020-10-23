@@ -4,7 +4,7 @@
   "description": "onlinejudge front end",
   "author": "zemal <rawidn@163.com>",
   "private": true,
-  "scripts": {
+  "scripts": {    
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
     "build": "node build/build.js",
