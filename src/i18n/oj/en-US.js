@@ -22,7 +22,7 @@ export const m = {
   Submitting: '전송중',
   Judging: '채점중',
   Wrong_Answer: '오답',
-  Statistic: 'Statistic',
+  Statistic: '통계',
   Close: '닫기',
   View_Contest: '대회 보기',
   Are_you_sure_you_want_to_reset_your_code: '코드를 초기화 하시겠습니까?',
