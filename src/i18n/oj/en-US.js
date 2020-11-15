@@ -66,8 +66,8 @@ export const m = {
   // ACMRank.vue
   ACM_Ranklist: 'ACM 순위',
   mood: '상태 메세지',
-  AC: 'AC',
-  Rating: '순위점수',
+  AC: '정답',
+  Rating: '정답률',
   // Announcements.vue
   Contest_Announcements: '대회 공지사항',
   By: '작성자 : ',
@@ -242,7 +242,7 @@ export const m = {
   Author: '인증자',
   Option: '옵션',
   Mine: 'Mine',
-  Search_Author: 'Search Author',
+  Search_Author: '인증자 검색',
   Accepted: '통과',
   Time_Limit_Exceeded: '시간 제한 초과',
   Memory_Limit_Exceeded: '메모리 제한 초과',
