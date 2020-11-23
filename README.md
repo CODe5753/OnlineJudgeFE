@@ -5,20 +5,19 @@
 [![iview](https://img.shields.io/badge/iview-2.8.0-blue.svg?style=flat-square)](https://github.com/iview/iview)
 [![element-ui](https://img.shields.io/badge/element-2.0.9-blue.svg?style=flat-square)](https://github.com/ElemeFE/element)
 [![Build Status](https://travis-ci.org/QingdaoU/OnlineJudgeFE.svg?branch=master)](https://travis-ci.org/QingdaoU/OnlineJudgeFE)
-
+![95%](https://progress-bar.dev/85?title=한글화)
 >### A multiple pages app built for OnlineJudge. [Demo](https://qduoj.com)
 
-## Features
+## 한글화 진행중
+FrontEnd 한글화 진행중입니다.
+[작동중인 페이지로 이동](http://inje-oj.com:443)
 
-+ Webpack3 multiple pages with bundle size optimization
-+ Easy use simditor & Nice codemirror editor
-+ Amazing charting and visualization(echarts)
-+ User-friendly operation
-+ Quite beautiful：)
+## 동작 방식
+기존의 Docker를 동작시키고 해당 FrontEnd를 TARGET으로 BackEnd를 연결시켜 줍니다.  
+FrontEnd는 수정된 상태로 표시되고, BackEnd는 기존과 동일하게 동작합니다.  
 
 ## Get Started
-
-Install nodejs **v8.12.0** first.
+nodejs **v8.12.0** 설치 필요.
 
 ### Linux
 
@@ -35,30 +34,15 @@ export TARGET=http://Your-backend
 # serve with hot reload at localhost:8080
 npm run dev
 ```
-### Windows
 
-```bash
-npm install
-# we use webpack DllReference to decrease the build time,
-# this command only needs execute once unless you upgrade the package in build/webpack.dll.conf.js
-set NODE_ENV=development 
-npm run build:dll
-
-# the dev-server will set proxy table to your backend
-set TARGET=http://Your-backend
-
-# serve with hot reload at localhost:8080
-npm run dev
-```
-
-## Screenshots
+## 스크린샷
 
 [Check here.](https://github.com/QingdaoU/OnlineJudge)
 
-## Browser Support
+## 브라우저 지원
 
-Modern browsers and Internet Explorer 10+.
+Internet Explorer 10+, Chrome
 
-## LICENSE
+## 라이센스
 
 [MIT](http://opensource.org/licenses/MIT)
