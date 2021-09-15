@@ -10,7 +10,7 @@
 
 ## 한글화 진행중
 FrontEnd 한글화 진행중입니다.
-[작동중인 페이지로 이동](http://inje-oj.com:443)
+[작동중인 페이지로 이동](http://inje-oj.com)
 
 ## 동작 방식
 기존의 Docker를 동작시키고 해당 FrontEnd를 TARGET으로 BackEnd를 연결시켜 줍니다.  
