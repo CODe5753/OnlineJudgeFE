@@ -120,4 +120,5 @@ export const m = {
   Welcome_to_Login: '관리자님 환영합니다',
   GO: '로그인',
   username: '사용자 이름',
-  password: '비밀번호'}
+  password: '비밀번호' 
+}
