@@ -20,7 +20,7 @@
           <p>{{$t('모든 프로그램은 Main 클래스의 정적 기본 메서드에서 시작해야 합니다. 공용 클래스를 사용하지 마십시오. 컴파일 오류를 방지하려면 Main도 공용이 아니어야 합니다.(버퍼링 된 I/O를 사용하여 과도한 플러싱으로 인한 시간 제한 초과를 방지합니다.)')}}</p>
         </li>
         <li>{{$t('m.How_to_report_bugs')}}
-          <p>{{$t('m.How_to_report_bugs_answer_part_1')}} <a href="https://github.com/code1995">Github</a></p>
+          <p>{{$t('m.How_to_report_bugs_answer_part_1')}} <a href="https://github.com/CODe1995/OnlineJudgeFE/issues">Github</a></p>
         </li>
       </ul>
     </div>
