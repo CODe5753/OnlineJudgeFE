@@ -104,7 +104,7 @@ export const m = {
   last: 'last',
   About_presentation_error_answer_part_2: 'line.  if it\'s still different with the correct output, the result will be',
   How_to_report_bugs: 'OJ 버그는 어디에 보고해야 합니까?',
-  How_to_report_bugs_answer_part_1: '관리자에게 보고 바랍니다. 14학번 강승현 010-5486-1467',
+  How_to_report_bugs_answer_part_1: '-',
   How_to_report_bugs_answer_part_2: 'The details(like env, version..) about a bug is required, which will help us a lot to solve the bug. Certainly, we are very pleased to merge your pull requests.',
   // Cancel.vue
   Cancel: 'Cancel',
