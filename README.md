@@ -5,44 +5,35 @@
 [![iview](https://img.shields.io/badge/iview-2.8.0-blue.svg?style=flat-square)](https://github.com/iview/iview)
 [![element-ui](https://img.shields.io/badge/element-2.0.9-blue.svg?style=flat-square)](https://github.com/ElemeFE/element)
 [![Build Status](https://travis-ci.org/QingdaoU/OnlineJudgeFE.svg?branch=master)](https://travis-ci.org/QingdaoU/OnlineJudgeFE)
-![95%](https://progress-bar.dev/85?title=한글화)
->### A multiple pages app built for OnlineJudge. [Demo](https://qduoj.com)
+>### [Demo](http://inje-oj.com)
 
-## 한글화 진행중
-FrontEnd 한글화 진행중입니다.
-[작동중인 페이지로 이동](http://inje-oj.com)
+## 개발 환경
+Env : `AWS EC2 t2.small`  
+OS : `Ubuntu 18.04`  
+Nodejs : `v8.17.0`  
+**해당 Frontend는 Backend 서버와 분리된 환경입니다.**
 
-## 동작 방식
-기존의 Docker를 동작시키고 해당 FrontEnd를 TARGET으로 BackEnd를 연결시켜 줍니다.  
-FrontEnd는 수정된 상태로 표시되고, BackEnd는 기존과 동일하게 동작합니다.  
+
+## HTTPS
+export TARGET proxy를 이용하여 FE를 구성하였습니다.
+빠른 시일 내 HTTPS를 설정할 계획입니다.
+
+## 한글화
+기존에 없었던 `ko-KR` locale을 생성 및 설정했습니다.
 
 ## Get Started
-nodejs **v8.12.0** 설치 필요.
+nodejs **v8.12.0** ~ **v8.17.0** 설치 필요.
 
 ### Linux
-
 ```bash
 npm install
-# we use webpack DllReference to decrease the build time,
-# this command only needs execute once unless you upgrade the package in build/webpack.dll.conf.js
+
 export NODE_ENV=development 
 npm run build:dll
 
-# the dev-server will set proxy table to your backend
-export TARGET=http://Your-backend
+export TARGET=http://Backend URL
 
-# serve with hot reload at localhost:8080
 npm run dev
 ```
-
-## 스크린샷
-
-[Check here.](https://github.com/QingdaoU/OnlineJudge)
-
-## 브라우저 지원
-
-Internet Explorer 10+, Chrome
-
-## 라이센스
-
+## LICENSE
 [MIT](http://opensource.org/licenses/MIT)
